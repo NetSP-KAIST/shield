@@ -1,0 +1,14 @@
+ucli
+port-add 11/- 100G RS
+port-add 12/- 100G RS
+port-enb 11/-
+port-enb 12/-
+port-add 33/- 10G NONE
+an-set 33/- NONE
+port-enb 33/-
+pm show
+port-enb -/-
+pm show
+exit
+exit
+exit

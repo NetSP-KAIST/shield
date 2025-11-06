@@ -1,0 +1,8 @@
+global-options: {}
+features:
+  p4-examples:
+  - p4-16-programs
+  switch:
+    profile: x1_tofino
+architectures:
+- tofino
