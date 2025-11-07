@@ -1,4 +1,6 @@
 # Shield 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17490769.svg)](https://doi.org/10.5281/zenodo.17490769)
+
 This is a repository for the paper "On the Security Risks of Memory Adaptation and Augmentation in Data-plane DoS Mitigation".
 
 ## Heracles attack
