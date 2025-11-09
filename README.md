@@ -11,13 +11,14 @@ In the `cerberus` directory, we provide a `README` for running both Python and D
 Note that running the `cerberus-c2` requires a Tofino ASIC-powered programmable switch and a server with two 40Gbps NIC ports (connected with QSFP28 cables to the programmable switch). 
 
 It is possible to compile and run `cerberus-c2` with the Tofino model; however, due to its packet-processing performance limitations, it is impossible to evaluate DoS defense performance with the Tofino model.
+Note that evaluating the full performance of `cerberus` requires a Tofino ASIC-powered programmable switch and a server with NIC (with two 40Gbps ports wired via QSFP28 cables to the programmable switch). 
 
 ## Shield: Shared Hierarchical Registers for Layered Decay
 
 ### Shield (Model)
 In the `shield-model` directory, we provide a `README` for running PTF tests to emulate shield functionality with the Tofino model.
 
-To test functionality of `Shield`, we provide minimum implementation for the PTF test. 
+To test the functionality of `Shield`, we provide a minimum implementation for the PTF test. 
 This layered_cms implementation includes Shield's hierarchical register design with layered decay.
 
 ### Shield (ASIC)
@@ -25,4 +26,5 @@ This layered_cms implementation includes Shield's hierarchical register design w
 > Below requires strict hardware and software constraints.
 
 In the `shield-sketch` directory, we provide a `README` for running the full shield-sketch implementation. 
-Note that evaluating the full performance of `Shield` requires a Tofino ASIC-powered programmable switch and a server with two 40Gbps NIC ports (connected with QSFP28 cables to the programmable switch). 
+It is possible to compile and run `shield-sketch` with the Tofino model; however, due to its packet-processing performance limitations, it is impossible to evaluate DoS defense performance with the Tofino model.
+Note that evaluating the full performance of `Shield` requires a Tofino ASIC-powered programmable switch and a server with NIC (with two 40Gbps ports wired via QSFP28 cables to the programmable switch). 
