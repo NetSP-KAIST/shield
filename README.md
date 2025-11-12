@@ -7,7 +7,7 @@ This is a repository for the paper "On the Security Risks of Memory Adaptation a
 > [!NOTE]
 > This part requires strict hardware and software constraints. 
 
-In the `cerberus` directory, we provide a `README` for running both Python and DPDK versions of the reproduced version of Cerberus [SP'24].
+In the `cerberus` directory, we provide a `README` for running both Python and DPDK versions of the reproduced version of Cerberus [[SP'24](https://ieeexplore.ieee.org/document/10646662/)].
 Note that running the `cerberus-c2` requires a Tofino ASIC-powered programmable switch and a server with two 40Gbps NIC ports (connected with QSFP28 cables to the programmable switch). 
 
 It is possible to compile and run `cerberus-c2` with the Tofino model; however, due to its packet-processing performance limitations, it is impossible to evaluate DoS defense performance with the Tofino model.
