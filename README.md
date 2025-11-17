@@ -17,6 +17,7 @@ Note that evaluating the full performance of `cerberus` requires a Tofino ASIC-p
 
 ### Shield (Model)
 In the `shield-model` directory, we provide a `README` for running PTF tests to emulate shield functionality with the Tofino model.
+Note that the [Open P4 Studio](https://github.com/p4lang/open-p4studio) only supports x86_64 architecture.
 
 To test the functionality of `Shield`, we provide a minimum implementation for the PTF test. 
 This layered_cms implementation includes Shield's hierarchical register design with layered decay.
