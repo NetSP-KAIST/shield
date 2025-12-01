@@ -21,7 +21,17 @@ PTF test is composed as follows:
 
 # Running PTF Tests
 
-Suppose tools directory is $TOOLS and this directory is located at $CURDIR. Below compiles Shield sketch data plane.
+Suppose tools directory is $TOOLS and this directory is located at $CURDIR.   
+You can find tools for Tofino on [P4ica](https://github.com/P4ica/tools) and SDE on [Open P4 Studio](https://github.com/p4lang/open-p4studio).
+After downloading and installing tools and SDE, please set up the manifest file and link `p4c` to `bf-p4c`.
+```
+cd $SDE_INSTALL/bin
+ln -s p4c bf-p4c
+cd $SDE
+echo "-DP4C=$SDE_INSTALL/bin/p4c" > ./bf-sde-open-p4studio.manifest
+```
+
+Below compiles Shield sketch data plane.
 ```
 $TOOLS/p4_build.sh $CURDIR/layered_cms.p4
 ```
