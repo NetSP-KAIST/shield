@@ -1,5 +1,30 @@
 /* -*- P4_16 -*- */
 
+/*
+ *  Reproduced version of "Cerberus (IEEE S&P '24)" 
+ *  Cerberus for INM security monitoring and defense with Adaptable Memory Slicing and Co-monitoring
+ *  Copyright (C) 2024 Hocheol Nam, KAIST
+ *
+ *  The original version of Cerberus is available at https://github.com/successlab/Cerberus, written by Huancheng Zhou (TAMU).
+ *  But the original repo does not provide a full implementation, including the control plane code.
+ * ======================================================
+ *  Original Cerbeurs code copyright
+ *  __author__      = 'Huancheng Zhou'
+ *  __copyright__   = 'Copyright 2024, Texas A&M University'
+*/
+
+/*******************************************************************************
+ * Tofino related includes such as (core.p4, t2na.p4, or tna.p4) are not included in this code.
+ * Those files that describe the P4 target architecture for Intel® Tofino™ and Intel ® Tofino 2™
+ * are licensed under Creative Commons Attribution-NoDerivs (CC BY-ND 4.0) license. 
+ * See https://github.com/barefootnetworks/Open-Tofino
+ *
+ * BAREFOOT NETWORKS CONFIDENTIAL & PROPRIETARY
+ *
+ * Copyright (c) Intel Corporation
+ * SPDX-License-Identifier: CC-BY-ND-4.0
+ */
+
 #include <core.p4>
 #if __TARGET_TOFINO__ == 2
 #include <t2na.p4>
