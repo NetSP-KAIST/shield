@@ -1,5 +1,22 @@
 /* -*- P4_16 -*- */
 
+/*************************************************************
+ *  Shield: Shared Hierarchical Registers for Layered Decay
+ *  Copyright (C) 2025 Hocheol Nam and Daehyun Lim, KAIST
+ *************************************************************/
+
+/*******************************************************************************
+ * Tofino related includes such as (core.p4, t2na.p4, or tna.p4) are not included in this code.
+ * Those files that describe the P4 target architecture for Intel® Tofino™ and Intel ® Tofino 2™
+ * are licensed under Creative Commons Attribution-NoDerivs (CC BY-ND 4.0) license. 
+ * See https://github.com/barefootnetworks/Open-Tofino
+ *
+ * BAREFOOT NETWORKS CONFIDENTIAL & PROPRIETARY
+ *
+ * Copyright (c) Intel Corporation
+ * SPDX-License-Identifier: CC-BY-ND-4.0
+ */
+
 #include <core.p4>
 #if __TARGET_TOFINO__ == 2
 #include <t2na.p4>
